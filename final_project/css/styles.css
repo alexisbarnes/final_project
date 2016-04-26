@@ -10,16 +10,19 @@ body {
 }
 
 a {
+  color: #F1C562;
   text-decoration: none;
 }
 
 a:hover {
+  color: #fff;
   text-decoration: none;
 }
 
 h1 {
-  font-family: 'Pinyon Script', cursive;
-  color: #ED4F85;
+  /*font-family: 'Pinyon Script', cursive;*/
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
   text-align: center;
   font-size: 4em;
   padding-bottom: 30px;
@@ -27,8 +30,9 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  color: #ED4F85;
+  color: #fff;
   text-align: center;
+  padding: 0 0 20px 0;
 }
 
 p {
@@ -44,9 +48,106 @@ p {
   flaot: right;
 }
 
+.margin-top {
+  margin-top: 40px;
+}
+
+/*---IMGS---*/
+.banner {
+  max-height: 600px;
+}
+
+.album {
+  max-width: 200px;
+  max-height: 300px;
+  margin: 0 20px 40px 0;
+}
+
 /*--Bio--*/
 .bio {
   padding-top: 10px;
+}
+
+.stream-link {
+  margin: 30px 0 0 0;
+}
+
+/*--Info Box--*/
+.tour-info-head {
+  width: auto;
+  background-color: #000;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+.tour-txt {
+  margin: 6px 0 0 0;
+}
+
+#tour-info {
+  width: auto;
+  height: 500px;
+  overflow: scroll;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.info-bg {
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  padding: 10px 0 10px 10px;
+}
+
+.stadium-box {
+  color: #000;
+  font-size: 25px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.location-box {
+  color: #000;
+  font-size: 18px;
+}
+
+.date-box {
+  color: #000;
+  margin: 0 0 0 0;
+
+}
+
+.sub-title-box {
+  color: #000;
+  font-weight: bold;
+}
+
+.time-box {
+  color: #000;
+  margin: 0 0 0 0;
+
+}
+
+.address-box {
+  color: #000;
+  margin: 0 0 0 0;
+
+}
+
+.number-box {
+  color: #000;
+}
+
+.site-box {
+  color: #000;
+}
+
+.site-box a {
+  color: #DE9214;
+}
+
+.site-box a:hover {
+  color: #000;
 }
 
 /*--Twitter--*/
@@ -63,18 +164,35 @@ p {
   border-top: none;
 }
 
-#twitter-formation {
-  max-width: 320px;
-  max-height: 408px;
-  overflow-y:auto;
-  overflow-x: none;
-  margin: 0 auto;
-  display: block;
-  border-right: 1px solid #CCD6DD;
-  border-left: 1px solid #CCD6DD;
-  border-bottom: 1px solid #CCD6DD;
-  border-top: none;
+@media only screen and (max-width: 1199px){
+  #twitter {
+    max-width: 293px;
+  }
+
+  .twitter-headertxt {
+    padding-left: 80px !important;
+  }
 }
+
+@media only screen and (max-width: 991px){
+  #twitter {
+    max-width: 320px;
+  }
+
+  .twitter-headertxt {
+    padding-left: 105px;
+  }
+
+  /*.instagram-content {
+    margin: -10px 0 0 20px !important;
+  }*/
+
+  .all-twitter {
+    float: left;
+    margin: 12px 0 0 20px;
+  }
+}
+
 
 .twitter-content {
   max-width: 320px;
@@ -83,8 +201,9 @@ p {
 }
 
 .twitter-head {
-  background-color: #ED4F85;
+  background-color: #000;
   height: 50px;
+  border: 1px solid #fff;
 }
 
 .twitter-headertxt {
@@ -96,6 +215,7 @@ p {
   padding-top: 8px;
   font-weight: 600;
   padding-left: 105px;
+  margin: 0 10px 0 0;
 }
 
 .twitter-headertxt a {
@@ -140,6 +260,8 @@ p {
   padding-bottom: 3px;
 }
 
+
+
 /*--Instagram--*/
 #instagram, #instagram-formation {
   max-width: 320px;
@@ -162,22 +284,34 @@ p {
 
 .instagram-content {
   max-width: 320px;
-  margin: 0 auto;
-  display: block;
+  margin: 0 0 0 10px;
 }
 
 .instagram-header {
-  background-color: #ED4F85;
+  background-color: #000;
   height: 50px;
+  border: 1px solid #fff;
+}
+
+.instagram-icon {
+  max-width: 30px;
+  margin-left: 70px;
+  padding-left: 6px;
+  padding-bottom: 3px;
+}
+
+.socialmedia-link-ig {
+  margin: 0 0 0 50px;
 }
 
 .instagram-headertxt {
-  font-family: 'Open Sans';
+  font-family: 'Grand Hotel', cursive;
   font-size: 35px;
   color: #fff;
-  letter-spacing: 1.5px;
+  /*letter-spacing: 1.5px;*/
   text-align: center;
-  padding-top: 7px;
+  /*padding-top: 7px;*/
+  margin: 6px 0 0 0;
 }
 
 .instagram-headertxt a {
@@ -197,7 +331,11 @@ p {
 
 .instagram-username-div {
   margin-top: 8px;
-  padding-left: 10px;
+  padding-left: 15px;
+}
+
+.instagram-username-div a {
+  color: #DE9214;
 }
 
 .instagram-date-div {
@@ -207,6 +345,10 @@ p {
 .instagram-username-caption {
   display: inline;
   margin-right: 5px;
+}
+
+.instagram-username-caption a {
+  color: #DE9214;
 }
 
 .instagram-caption-div {
@@ -224,6 +366,8 @@ p {
 
 .instagram-loop {
   margin: 8px 0 25px 0;
+  border-bottom: 1px solid #000;
+  padding: 0 0 15px 0;
 }
 
 .instagram-caption {
@@ -235,7 +379,23 @@ p {
   padding-right: 15px;
 }
 
+.ig-heart {
+  max-width: 15px;
+  margin: 0 5px 0 5px;
+}
+
 /*---Map--*/
+.map-head {
+  width: auto;
+  background-color: #000;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+.map-txt {
+  margin: 6px 0 0 0;
+}
+
 #map {
   width: 100%;
   height: 500px;
@@ -243,7 +403,7 @@ p {
 
 .stadium {
   font-family: 'Open Sans', sans-serif;
-  color: #ED4F85;
+  color: #000;
   font-size: 18pt;
   margin: 0 0 -10px 0;
   text-align: left;
@@ -295,11 +455,11 @@ p {
 
 .site a {
   text-decoration: none;
-  color: #6E253E;
+  color: #ED4F85;
 }
 
 .site a:hover {
-  color: #fff;
+  color: #000;
 }
 
 .sub-title {
@@ -308,13 +468,59 @@ p {
   font-weight: 700;
 }
 
-/*----FOOTER---*/
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+
+/*---SPOTIFY--*/
+.spotify-head {
+  width: 300px;
+  background-color: #000;
   height: 50px;
-  width: 100%;
-  background-color: #ED4F85;
-  z-index: 10;
+  border: 1px solid #fff;
+}
+
+.spotify-txt {
+  margin: 6px 0 0 0;
+}
+
+.spotify-bg {
+  background-color: #fff;
+  width: 300px;
+  height: 450px;
+}
+
+
+/*---MEDIA QUERIES--*/
+@media screen and (max-width: 493px) {
+  .album {
+    margin: 0 20px 10px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .tour-info {
+    margin: 30px 0 0 0;
+  }
+
+  .instagram-content {
+    margin: 30px 0 0 20px;
+  }
+
+  .spotify-content {
+    margin: 30px 0 0 20px;
+  }
+
+  .spotify-bg {
+    background-color: #000;
+  }
+
+  .purchase-link {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .twitter-headertxt {
+    margin: 8px 8px 0 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
 }

@@ -13,10 +13,12 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Pinyon+Script|Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
   </head>
 
   <header>
-    <img src="img/banner.png" width="100%">
+    <img src="img/banner.png" class="banner" width="100%">
   </header>
 
   <body>
@@ -24,15 +26,27 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bio">
           <h1>Beyonc&eacute; : The Formation World Tour</h1>
-          <img src="img/beyonce.jpeg" class="float-left">
-          <p class="float-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a neque imperdiet, dapibus orci ut, scelerisque justo. Ut in ante sem. Curabitur et ligula feugiat, eleifend nibh et, vestibulum purus. Duis vehicula enim dui, et scelerisque justo mollis non. Nunc commodo, nisl eget sagittis scelerisque, nibh dolor pulvinar eros, eget suscipit metus odio dignissim orci. Mauris nec dignissim sapien.</p>
+          <img src="img/lemonade.jpg" class="float-left album">
+          <p class="float-right">Beyonc&eacute; is kicking off The Formation World Tour this spring with DJ Khaled as the opening act. The tour will start in Miami, Florida on April 27th and finish in Detroit, Michigan. Songs from her new visual album “Lemonade” will be featured in her performance. Come and watch one of the best performers of this generation. This will not be an event you would want to miss! Search for tour information below to find a tour stop near you.<br> <p class="float-right stream-link"><a href="http://bit.ly/1SlnonM" target="_blank">Stream Lemonade on Tidal</a></p><br><p class="float-right purchase-link"><a href="http://apple.co/1rc7ulp" target="_blank">Buy Lemonade on iTunes</a></p>
         </div>
       </div>
 
       <div class="row">
-        <div class="subtitle"><h2>#Formation</h2></div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+          <div class="map-head"><h2 class="map-txt">Tour Route</h2></div>
+          <div id="map"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tour-info">
+          <div class="tour-info-head"><h2 class="tour-txt">Tour Info</h2></div>
+          <div id="tour-info"></div>
+        </div>
+      </div>
+
+      <div class="row margin-top">
+        <!-- <div class="subtitle"><h2>#Formation</h2></div> -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <!--Twitter-->
+          <div class="all-twitter">
           <div class="twitter-content">
             <div class="twitter-head">
               <a target="_blank" class="socialmedia-link" href="http://www.twitter.com"><h2 class="twitter-headertxt">Twitter<img class="twitter-bird" src="img/twitter.png"></a></h2>
@@ -47,34 +61,51 @@
             </a>
           </div>
         </div>
+      </div>
 
         </div>
 
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <!--Instagram-->
+          <!--Source: brmayes.com/dynamic/586/project_four-->
           <div class="instagram-content">
             <div class="instagram-header">
-              <h2 class="instagram-headertxt tk-tamarillo"><a class="socialmedia-link" href="http://instagram.com" target="_blank">Instagram</a><a href="."><div class="reload"></div></a></h2>
+              <h2 class="instagram-headertxt tk-tamarillo"><a class="socialmedia-link-ig" href="http://instagram.com" target="_blank">Instagram<img class="instagram-icon" src="img/instagram.png"></a><a href="."><div class="reload"></div></a></h2>
             </div>
             <div id="instagram"></div>
         </div>
       </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 spotify-content">
+        <div class="spotify-head"><h2 class="spotify-txt">Listen</h2></div>
+        <div class="spotify-bg">
+          <div class="spotify-player">
+            <iframe src="https://embed.spotify.com/?uri=spotify:user:sonymusicentertainment:playlist:5Byx0IcL7WeuTsqhiZFV6Q&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
+  <!-- </div> -->
 
-      <div class="row">
-        <div class="subtitle"><h2>Tour Locations</h2></div>
+    <!-- <div clss="row">
+
+    </div> -->
+
+
+
+      <!-- <div class="row">
+        <div class="subtitle"><h2>Listen</h2></div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div id="map"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="subtitle"><h2>Shop</h2></div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
         </div>
-      </div>
+      </div> -->
+
+
+
+      <!-- <a class="play" href="#" onclick="toggleSound();"></a> -->
+      <!-- <div id="player" onclick="toggleSound();">Click to Toggle Sound</div> -->
+      <!-- <audio id="audio"><source src="formation.mp3" type="audio/mpeg">Your browser does not support this audio format.</audio> -->
 
     </div>
 
@@ -95,9 +126,7 @@
     <script src="js/map.js"></script>
   </body>
 
-  <footer>
 
-  </footer>
 
 
 </html>

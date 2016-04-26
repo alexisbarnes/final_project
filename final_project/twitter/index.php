@@ -56,7 +56,7 @@
         background-color: #fff;
         clear: both;
         padding: 8px;
-        border-bottom: 1px solid #CCD6DD;
+        border-bottom: 1px solid #000;
         border-right: 1px solid #CCD6DD;
       }
       .twitpic {
@@ -83,11 +83,12 @@
       .col-md-4, .col-xs-4 {
         padding-left: 40px;
       }
+      a {
+        color: #DE9214;
+      }
       a:hover {
         text-decoration: none;
-      }
-      .tweet a {
-        color: #55ACEE;
+        color: #000l
       }
       .expand {
         color: #A9ACAE;
@@ -135,7 +136,7 @@ $postfields = array(
 /** Perform a GET request and echo the response **/
 /** Note: Set the GET field BEFORE calling buildOauth(); **/
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
-$getfield = '?q=%23formation';
+$getfield = '?q=%23lemonade';
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
 // echo $twitter->setGetfield($getfield)

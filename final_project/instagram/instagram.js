@@ -10,7 +10,7 @@
 
 $(function() {
 
-	var apiurl = "https://api.instagram.com/v1/tags/formation/media/recent?access_token=248660894.aee21ef.0cb44e17e81547ef994d0de5ff989bbc&callback=?"
+	var apiurl = "https://api.instagram.com/v1/tags/lemonade/media/recent?access_token=248660894.aee21ef.0cb44e17e81547ef994d0de5ff989bbc&callback=?"
 	var access_token = location.hash.split('=')[1];
 	var insta = "";
 
@@ -53,7 +53,7 @@ $(function() {
 						//date
 						insta += '<div class="col-md-3 col-xs-3 col2insta instagram-date-div">'
 						insta += '<div class="clock"></div>'
-						//insta += day
+
 						insta += '</div>'
 
 						//end row
@@ -66,7 +66,7 @@ $(function() {
 
 						//likes and caption
 						insta += '<div class="instagram-caption-div">'
-						insta += '<div class="heart"></div>' + data.likes.count
+						insta += '<img class="ig-heart" src="img/heart.png">' + data.likes.count
 						insta += '<br><div class="chatbubble"></div>'
 						insta += '<span class="instagram-username-caption">'
 						insta += '<a target="_blank" href="http://www.instagram.com/' + data.user.username + '">' + data.user.username + '</span></a>'
@@ -75,22 +75,10 @@ $(function() {
 
 						//end of loop
 						insta += '</div>'
-					// }
+
 				});
 
-			// 	$(".url").linky();
-			//
-			// 	$(".instagram-mentions").linky({
-			// 			mentions: true,
-			// 			urls: false,
-			// 			linkTo: "instagram"
-			// 	});
-			//
-			// 	$(".hashtags").linky({
-			// 			hashtags: true,
-			// 			urls: false,
-			//
-			// });
+
 
 
 			$("#instagram").append(insta);
